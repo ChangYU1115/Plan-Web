@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  background-color: red;
+  text-align: center;
+  font-size: 50px;
+  height: 70px;
+}
+
+.content {
+  background-color: aqua;
+  display: flex;
+  height: 600px;
+}
+
+.enter {
+  background-color: yellow;
+  width: 8%;
+}
+
+.enter2 {
+  background-color: yellow;
+  width: 15%;
+}
+
+.LeftArrow {
+  background-color: antiquewhite;
+  width: 2%;
+}
+
+.date {
+  background-color: brown;
+  width: 100%;
+}
+
+.RightArrow {
+  background-color: cornflowerblue;
+  width: 2%;
+}
+
+.Footer {
+  background-color: chocolate;
+}
+
+.result {
+  height: 600px;
+}

@@ -1,0 +1,343 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Comic Sans MS, "cwTeXFangSong", sans-serif;
+}
+
+body {
+  font-size: 100%;
+}
+
+.Date,
+.Input {
+  width: 45%;
+  font-size: 20px;
+}
+
+.Input1 {
+  width: 70%;
+  font-size: 20px;
+}
+
+.nav {
+  background-color: #ffe5e5;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.nav,
+.Contents {
+  text-align: center;
+}
+
+.headTitle {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+  height: 70px;
+}
+
+.title h1 {
+  font-size: 32px;
+  padding-left: 80px;
+}
+
+.content {
+  background-color: aqua;
+  display: flex;
+  height: 600px;
+}
+
+.enter {
+  background-color: yellow;
+  width: 8%;
+}
+
+.enter2 {
+  background-color: yellow;
+  width: 15%;
+}
+
+.LeftArrow {
+  background-color: antiquewhite;
+  width: 2%;
+}
+
+.date {
+  background-color: brown;
+  width: 100%;
+}
+
+.RightArrow {
+  background-color: cornflowerblue;
+  width: 2%;
+}
+
+.Footer {
+  background-color: chocolate;
+}
+
+.result {
+  height: 600px;
+}
+
+.twotwo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.one {
+  display: flex;
+}
+
+#result {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  font-size: 23px;
+  padding-left: 50px;
+}
+
+.ListDay {
+  background-color: #f9f3cc;
+  display: flex;
+  padding: 40px 0 40px 5%;
+}
+
+.first {
+  background-color: #b9f3fc;
+  width: 25%;
+}
+
+.second {
+  background-color: #aee2ff;
+  width: 50%;
+}
+
+.third {
+  background-color: #93c6e7;
+  width: 25%;
+}
+
+.first,
+.second,
+.third {
+  padding: 30px 0px 50px 0px;
+}
+
+.ListConects span {
+  font-size: 25px;
+  width: 70%;
+}
+
+.addList {
+  display: flex;
+  margin: 15px 0;
+}
+
+.addLsiContects {
+  background-color: #d7e5ca;
+
+  padding: 40px 0 110px 75px;
+}
+
+#result2 {
+  margin-top: 30px;
+}
+
+#result2 p {
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+#build,
+#add,
+#save {
+  width: 180px;
+  height: 80px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 25px;
+  font-weight: 1000;
+  background-color: rgb(235, 238, 235);
+  transition: background-color 0.3s;
+  padding-right: 6%;
+}
+
+#build:hover,
+#add:hover,
+#save:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+#step {
+  font-size: 40px;
+}
+
+.headText {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* List事件 */
+.fc-event-title-container {
+  height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.addList a img {
+  height: 50%;
+  color: #aee2ff;
+}
+
+.img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+}
+
+#step img,
+.headTitle img {
+  position: static;
+}
+
+/* RWD */
+
+/* 中型桌面 */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+}
+
+/* 大型平板、小型桌面 */
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .ListDayH1 {
+    font-size: 30px;
+  }
+}
+
+/* 中型平板 */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .ListDayH1 {
+    font-size: 25px;
+  }
+}
+
+/* 小型平板、大型手機 */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #result {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  .ListDayH1 {
+    padding-bottom: 20px;
+  }
+  .one {
+    display: block;
+  }
+  .first,
+  .second,
+  .third {
+    width: 100%;
+  }
+  .ListDay {
+    display: block;
+    padding: 40px 0;
+  }
+  .addLsiContects {
+    padding: 40px 0 110px 0;
+  }
+  #build,
+  #save {
+    padding-right: 30px;
+  }
+}
+
+/* 中型手機 */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  #result {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  .ListDayH1 {
+    padding-bottom: 20px;
+  }
+  .one {
+    display: block;
+  }
+  .first,
+  .second,
+  .third {
+    width: 100%;
+  }
+  .headText {
+    font-size: 16px;
+  }
+  .ListDay {
+    display: block;
+    padding: 40px 0;
+  }
+  .addLsiContects {
+    padding: 40px 0 110px 0;
+  }
+  #build,
+  #save {
+    padding-right: 30px;
+  }
+}
+
+/* 小型手機 */
+@media screen and (max-width: 576px) {
+  #result {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  .one {
+    display: block;
+  }
+  .first,
+  .second,
+  .third {
+    width: 100%;
+  }
+  .headText {
+    font-size: 16px;
+  }
+  .ListDay {
+    display: block;
+    padding: 40px 0;
+  }
+  .addLsiContects {
+    padding: 20px 0 10px 0;
+  }
+  .ListDayH1 {
+    padding-bottom: 20px;
+  }
+  .fc .fc-header-toolbar {
+    display: block;
+    text-align: center;
+  }
+  .title h1 {
+    padding: 0;
+  }
+  .twotwo {
+    display: block;
+  }
+  .ListConects {
+    margin-top: 50px;
+  }
+  .ListConects span {
+    width: 65%;
+  }
+}
